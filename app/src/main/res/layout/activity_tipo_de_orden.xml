@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorFondo">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nacho.mannadrawe.activity.TipoDeOrdenActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="30dp"
+    android:text="@string/prioridad"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:textColor="@color/colorPrimaryDark"/>
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginStart="50dp"
+    android:checked="false"
+    android:id="@+id/radioGroupPrioridad">
+
+    <RadioButton
+        android:id="@+id/radioButtonPrioridad0"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prioridad_muy_alta"
+        />
+    <RadioButton
+        android:id="@+id/radioButtonPrioridad1"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prioridad_alta"/>
+    <RadioButton
+        android:id="@+id/radioButtonPrioridad2"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prioridad_media"/>
+    <RadioButton
+        android:id="@+id/radioButtonPrioridad3"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prioridad_baja"/>
+
+</RadioGroup>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="30dp"
+    android:text="@string/estado"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:textColor="@color/colorPrimaryDark"/>
+
+<CheckBox
+    android:layout_marginStart="50dp"
+    android:id="@+id/checkBoxEstado0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="7dp"
+    android:text="@string/estado_parado"/>
+
+<CheckBox
+    android:layout_marginStart="50dp"
+    android:id="@+id/checkBoxEstado1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="7dp"
+    android:text="@string/estado_rotura"/>
+
+<CheckBox
+    android:layout_marginStart="50dp"
+    android:id="@+id/checkBoxEstado2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="7dp"
+    android:text="@string/estado_ruido"/>
+
+<Button
+    android:id="@+id/buttonCrear"
+    android:layout_marginTop="90dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/boton_continuar"
+    android:textAllCaps="false"
+    android:textColor="@color/colorBlanco"
+    android:background="@drawable/side_nav_bar"
+    android:textSize="15sp" />
+
+<include
+    layout="@layout/pie_de_activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+</LinearLayout>
+
+</ScrollView>

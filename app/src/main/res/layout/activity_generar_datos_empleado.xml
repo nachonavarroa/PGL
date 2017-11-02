@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorFondo">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.nacho.mannadrawe.activity.GenerarDatosEmpleadoActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+            <EditText
+                android:id="@+id/editTextNombreEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_empleado"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:maxLength="30"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+            <EditText
+                android:id="@+id/editTextCodigoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/codigo_empleado"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonContiuarEmpleado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_continuar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlanco"
+            android:background="@drawable/side_nav_bar"
+            android:textSize="15sp"
+            android:layout_marginTop="195dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+        <include
+            layout="@layout/pie_de_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

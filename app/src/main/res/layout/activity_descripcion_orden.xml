@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorFondo">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context="com.example.nacho.mannadrawe.activity.DescripcionOrdenActivity">
+        <TextView
+            android:id="@+id/textViewNombreEmpleadoDescripcionOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:text="@string/nombre_empleado"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/textViewCodigoEmpleadoDEscripcionOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:text="@string/codigo_empleado"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/textViePrioridadSelec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:text="@string/prioridad"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/textViewEstadoSelec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:text="@string/estado"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:id="@+id/editTextUbicacion"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ubicacion"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:maxLines="3"
+                android:maxLength="80"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:id="@+id/editTextDescripcion"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripcion"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:maxLines="10"
+                android:maxLength="350"/>
+
+         </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonContinuarDescripcionOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_continuar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlanco"
+            android:background="@drawable/side_nav_bar"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="20sp"/>
+
+        <include
+            layout="@layout/pie_de_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonContinuarDescripcionOrden"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+     </LinearLayout>
+
+</ScrollView>

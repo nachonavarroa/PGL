@@ -1,0 +1,146 @@
+<resources>
+    <string name="name">ManNa</string>
+    <string name="app_name">ManNa.v.3</string>
+    <string name="title_activity_drawe">ManNa</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Prioridad-->
+    <string name="prioridad_muy_alta">Muy alta</string>
+    <string name="prioridad_alta">Alta</string>
+    <string name="prioridad_media">Media</string>
+    <string name="prioridad_baja">Baja</string>
+    <!--Estado-->
+    <string name="estado_parado">Parado</string>
+    <string name="estado_rotura">Rotura</string>
+    <string name="estado_ruido">Ruido</string>
+    <string name="estado_agua">Agua</string>
+    <string name="estado_parado_rotura">Parado, Rotura</string>
+    <string name="estado_parado_rotura_ruido">Parado, Rotura, Ruido</string>
+    <string name="estado_parado_ruido">Parado, Ruido</string>
+    <string name="estado_rotura_ruido">"Rotura, Ruido</string>
+
+    <!--Subtititulos actividades -->
+    <string name="subtititulo_menu"> Menú</string>
+    <string name="subtitulo_datos_empleado"> Datos de empleado</string>
+    <string name="subtitulo_titulo_tipo_orden"> Tipo de orden</string>
+    <string name="subtitulo_descripcion_orden"> Descripción de la orden</string>
+    <string name="subtitulo_orden_generada"> Orden generada</string>
+    <string name="subtitulo_autor"> Autor</string>
+    <string name="subtitulo_ayuda"> Ayuda</string>
+    <string name="subtitulo_ver"> Ver ordenes</string>
+    <string name="subtitulo_ver_estado_ordenes"> Ver estado de ordenes</string>
+    <!--Autor -->
+    <string name="copy">© 2017 Nacho Navarro Arranz</string>
+    <string name="nombre_autor">Nacho Navarro Arranz</string>
+    <string name="email_autor">nachonavarroa@hotmail.com</string>
+    <string name="web_autor">http://www.nachonavarro.esy.es</string>
+    <!--Botones -->
+    <string name="boton_entrar">Entrar</string>
+    <string name="boton_continuar">Continuar</string>
+    <string name="boton_confirmar">Confirmar</string>
+    <string name="boton_volver">Volver</string>
+    <string name="string_ayuda"> Ayuda</string>
+    <string name="string_camara"> Cámara</string>
+    <string name="string_ir_atras"> Ir atras</string>
+    <string name="string_ir_generar_ordenes"> Ir generar orden</string>
+    <string name="string_ir_ver_ordenes"> Ir ver ordenes</string>
+    <string name="string_borrar"> Borrar</string>
+    <string name="string_editar"> Editar</string>
+    <string name="string_guardar"> Guardar</string>
+
+    <!-- -->
+    <string name="fecha">Fecha</string>
+    <string name="codigo">Código</string>
+    <string name="nombre_empleado">Nombre de empleado</string>
+    <string name="codigo_empleado">Código de empleado (4 dígitos max.)</string>
+    <string name="prioridad">Prioridad</string>
+    <string name="estado">Estado</string>
+    <string name="img_descripcion_logo">logo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="generar_ordende_trabajo">Generar Orden de Trabajo</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="mostrarPdf"> Generar y mostrar PDF</string>
+    <string name="out_app"> Salir</string>
+    <string name="ver_ordenes"> Ver ordenes</string>
+    <string name="ver_estado_ordenes"> Ver estado de ordenes</string>
+    <string name="sin_datos">Sin datos.</string>
+    <string name="progress_cargando_datos">Cargando datos&#8230;</string>
+
+    <!--Titulos -->
+
+    <string name="titulo1">» Fecha de creación: </string>
+    <string name="titulo2">» Código orden: </string>
+    <string name="titulo3">» Nombre empleado: </string>
+    <string name="titulo4">» Código empleado: </string>
+    <string name="titulo5">» Prioridad: </string>
+    <string name="titulo6">» Estado: </string>
+    <string name="titulo7">» Ubicación: </string>
+    <string name="titulo8">» Descripción: </string>
+
+    <!--avisos-->
+    <string name="elegir_tipo_ciudad">Tienes que elegir PRIORIDAD y ESTADO"</string>
+    <string name="valores_no_validos">Valor no válido, el código ha se ser mayor de 0"</string>
+    <string name="campo_vacio">No se puede dejar este campo vacío"</string>
+    <string name="orden_generada_correcta">Orden generada correctamente"</string>
+    <string name="orden_ya_generada">Esta orden ya está generada"</string>
+    <string name="seleccionado"> seleccionado</string>
+    <string name="deseleccionado"> deseleccionado</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="toast_mostrarPdf">Se abrira fichero PDF despues de crearse</string>
+    <string name="toast_no_mostrarPdf">No se abrira fichero PDF despues de crearse</string>
+    <string name="toas_error_crear_fichero">Se ha producido un error el crear el fichero: </string>
+    <string name="toast_app_close">La aplicación se cerrará</string>
+
+    <!--ayuda-->
+    <string name="contenido_ayuda_menu">
+        Para poder acceder a los diferentes apartados debes seleccionar
+        la etiqueta con el nombre del apartado y cliclear en la imagen.\n
+
+    </string>
+
+    <string name="contenido_ayuda_datos_empleado">
+        En estos campos introducimos los datos
+        del empleado que solocita la orden.\n\n
+        Nombre de empleado.\n
+        Introducimos el nombre del empleado.\n
+        Recuerda que este campo es obligatorio.\n\n
+        Código de empleado.\n
+        Introducimos el código de empleado, ha de ser como máximo de
+        cuatro cifras y no puede ser 0.\n
+        Recuerda que este campo es obligatorio.\n
+    </string>
+
+    <string name="contenido_ayuda_orden_trabajo">
+        En estos campos introducimos los datos
+        de la orden de trabajo.\n\n
+        Debes ejegir una Prioridad y ademas tienes que elegir el
+        Estado  en el cual, puedes elegir de uno a tres campos.\n\n
+        Recuerda que este campo es obligatorio.\n\n
+        En la ubicación debes de introducir el lugar en donde es necesrio la
+        intervención.\n
+        En la descripción de la orden puedes realizar una breve descripcion de lo ocurrido.\n
+        Recuerda que este campo es obligatorio.\n\n
+        Al confirmar la orden se graban todos los datos y de genera un documento PDF.\n
+        Tambien puedes realizar una foto ,que se guardará en la carpeta de la aplicación
+        con los ficheros .pdf.\n\n
+        Los ficheros generados .jpg y .pdf tendran el mismo nombre, que será el código de la orden
+        y su respectiva extension .jpg o .pdf .\n
+    </string>
+
+    <string name="contenido_ayuda_codigo">
+        El código de la orden se genera automaticamente.\n\n
+        Es el instante en que se genera la orden transformado
+        en milisegundos, con lo cual nunca se podrá generar dos ordenres repetidas.\n
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_ver_estado_ordenes">VerEstadoOrdenesActivity</string>
+
+
+</resources>

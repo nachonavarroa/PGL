@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.nacho.mannadrawe">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".proveedorDeContenido.ProveedorContenido"
+            android:authorities="com.example.nacho.mannadrawe.proveedorDeContenido.ProveedorContenido"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity
+            android:name=".activity.DrawerMainActivity"
+            android:label="@string/title_activity_drawe"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.AyudaActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SplashActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.AutorActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.GenerarDatosEmpleadoActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.TipoDeOrdenActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.DescripcionOrdenActivity"
+            android:finishOnTaskLaunch="true"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.OrdenGeneradaActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.VerOrdenesActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.EditOrdenActivity"
+            android:label="@string/title_activity_edit"
+            android:parentActivityName=".activity.VerOrdenesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VerOrdenesActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.VerEstadoOrdenesActivity"
+            android:parentActivityName=".activity.DrawerMainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.DrawerMainActivity"/>
+        </activity>
+    </application>
+
+</manifest>

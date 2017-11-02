@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorFondo">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context="com.example.nacho.
+                    mannadrawe.activity.OrdenGeneradaActivity">
+
+        <android.support.design.widget.AppBarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <CheckBox
+            android:id="@+id/checkBoxMostrarPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_fondo_check_box_pdf"
+            android:textColor="@color/colorNegro"
+            android:text="@string/mostrarPdf"/>
+
+        <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/fecha" />
+
+    <TextView
+        android:id="@+id/textViewCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/codigo"/>
+
+    <TextView
+        android:id="@+id/textViewNombreEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/nombre_empleado"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textViewCodigoEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/codigo_empleado"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textViewNombreEmpleado"
+        android:layout_alignLeft="@+id/textViewNombreEmpleado"
+        android:layout_alignStart="@+id/textViewNombreEmpleado" />
+
+    <TextView
+        android:id="@+id/textViewPrioridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@+id/textViewNombreEmpleado"
+        android:layout_alignStart="@+id/textViewNombreEmpleado"
+        android:layout_below="@+id/textViewCodigoEmpleado"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:text="@string/prioridad" />
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@+id/textViewPrioridad"
+        android:layout_alignStart="@+id/textViewPrioridad"
+        android:layout_below="@+id/textViewPrioridad"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/estado" />
+
+    <TextView
+        android:id="@+id/textViewUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textViewEstado"
+        android:layout_alignLeft="@+id/textViewEstado"
+        android:layout_alignStart="@+id/textViewEstado"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:maxLength="160"
+        android:text="@string/ubicacion"/>
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:maxLines="11"
+        android:maxLength="390"
+        android:text="@string/descripcion"/>
+
+    <Button
+        android:id="@+id/buttonConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@drawable/side_nav_bar"
+        android:text="@string/boton_confirmar" />
+
+        <include
+        layout="@layout/pie_de_activity"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+</ScrollView>
